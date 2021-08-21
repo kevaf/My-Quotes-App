@@ -7,6 +7,9 @@
     height: 100px;
     
 }
+.navigation{
+    margin-right:200px;
+}
 .logo_container {
     color: white;
 }
@@ -20,9 +23,9 @@
 .navigation li a {
     text-decoration: none;
     color: white;
-    padding: 25px;
+    padding: 10px;
     display: block;
-    margin-left: 100px;
+    
 }
 .navigation li a:hover {
     color: red;
