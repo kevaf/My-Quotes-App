@@ -5,10 +5,10 @@
         <div class="col-md-6">
           <div *ngFor='let quotes of quote;let i = index'>
             <div>
-              <h6 >{{quotes.authorName}} </h6>
-              <h6 >{{quotes.quoteDescription}} </h6>
-              <h6 >{{quotes.userName}} </h6>
-              <h6 >{{quotes.time}} </h6>
+              <h5 >Author: <span style="color: red;">{{quotes.authorName}}</span> </h5>
+              <h3 > {{quotes.quoteDescription}} </h3>
+              <h5 >Posted By: <span style="color: blue;">{{quotes.userName}}</span> </h5>
+              <h6 >{{quotes.time|date|timePassed}} </h6>
             </div>
             <button class="btn btn-outline-success"(click)="upvoteQuote(i)"><i class="fas fa-heart"></i> {{quotes.upvote}}</button> &nbsp;&nbsp;
             <button class="btn btn-outline-info"(click)="downvoteQuote(i)"><i class="fas fa-heart-broken"></i>{{quotes.downvote}}</button> &nbsp;&nbsp;
