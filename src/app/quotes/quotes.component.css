@@ -1,3 +1,9 @@
 .container{
     padding-top: 8%;
 }
+ #currentQuote{
+    padding-top: 5%;
+ }
+ #createQuote{
+     padding-bottom: 2%;
+ }
