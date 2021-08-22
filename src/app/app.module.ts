@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { TimePassedPipe } from './time-passed.pipe';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     HomePageComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
+    TimePassedPipe,
     
   ],
   imports: [
