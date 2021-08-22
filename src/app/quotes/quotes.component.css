@@ -7,7 +7,7 @@
  #createQuote{
      padding-bottom: 2%;
  }
- #quoterow{
-     display: flex;
-     flex-direction: row;
+ #quotecol{
+    border: 2px solid gray;
+    justify-content: space-between;
  }

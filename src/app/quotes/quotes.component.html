@@ -1,49 +1,37 @@
 <div class="container" id="createQuote">
-    <h1 style="text-align: center;">My Quotes</h1>
-    <hr>
-    <div class="col-md-12">      
-      <app-quote-form (addQuote)="createNewQuote($event)"></app-quote-form>
-      </div>
-  
-    <div id="currentQuote">
-      
-      <h2 style="text-align: center;">Current Quotes</h2>
-          <hr>
-        <div >
-          <div *ngFor='let quotes of quote;let i = index'><br><br>
-            
-            <div class="col-md-4">
-            <div>
-              <p *ngIf='quotes===highlightfavorite()'appHighlightFavoriteQuote style="text-align: center;">Best Voted Quote</p>
-            <div class="row" id="quoterow">
-              <h5 >Author: <span style="color: red;">{{quotes.authorName}}</span> </h5>
-              <h3 > {{quotes.quoteDescription}} </h3>
-              <h5 >Posted By: <span style="color: blue;">{{quotes.userName}}</span> </h5>
-              <h6 >{{quotes.time|date|timePassed}} </h6>
-            </div>
-            <button class="btn btn-outline-success"(click)="upvoteQuote(i)"><i class="fas fa-heart"> Like</i> {{quotes.upvote}}</button> &nbsp;&nbsp;
-            <button class="btn btn-outline-info"(click)="downvoteQuote(i)"><i class="fas fa-heart-broken"> Dislike</i> {{quotes.downvote}}</button> &nbsp;&nbsp;
-            <button class="btn btn-outline-danger" (click)="deleteQuote($event, i)"><i class="fas fa-trash"> Delete</i></button>
-          </div>
-        </div>
-          </div><br><br>
-        </div>
-     </div>
-
-     
-  
-  
-  
-  
-  
-  
-  
-  
-    <!-- <div class="row">
-      <div class="col-md-6">
-          <div>
-            <h4 *ngFor= "let quotes of quote">{{quotes.quotetxt}}</h4>
-          </div>
-      </div>
+  <h1 style="text-align: center;">My Quotes</h1>
+  <hr>
+  <div class="col-md-12">
+    <app-quote-form (addQuote)="createNewQuote($event)"></app-quote-form>
   </div>
-</div> -->
+
+  <div id="currentQuote">
+
+    <h2 style="text-align: center;">Current Quotes</h2>
+    <hr>
+    <div class="row" id="quotecol">
+    <div *ngFor='let quotes of quote;let i = index'class="col-md-4" ><br>
+    <p *ngIf='quotes===highlightfavorite()' appHighlightFavoriteQuote style="text-align: center;">Best Voted Quote</p>
+
+      <h5>Author: <span style="color: red;">{{quotes.authorName}}</span> </h5>
+      <h3> {{quotes.quoteDescription}} </h3>
+      <h5>Posted By: <span style="color: blue;">{{quotes.userName}}</span> </h5>
+      <h6>{{quotes.time|timePassed}} </h6> 
+
+      <button class="btn btn-outline-success" (click)="upvoteQuote(i)"><i class="fas fa-heart"> Like</i>
+        {{quotes.upvote}}</button> &nbsp;&nbsp;
+      <button class="btn btn-outline-info" (click)="downvoteQuote(i)"><i class="fas fa-heart-broken"> Dislike</i>
+        {{quotes.downvote}}</button> &nbsp;&nbsp;
+      <button class="btn btn-outline-danger" (click)="deleteQuote($event, i)"><i class="fas fa-trash">Delete</i></button><br> <br> 
+      </div>
+
+
+
+
+
+
+
+
+
+
+  
