@@ -15,6 +15,12 @@ If you have any suggestions or improvements you can reach the author via mail at
 2. Step two <br> Git clone https://github.com/kevaf/My-Quotes-App.git to your local machine storage.
 3.  Step three <br> On your Terminal run ng serve --open to view the site on your browser.
 
+## Screenshots
+![LandingPage](src/assets/landing.png)
+![CreateQuote](src/assets/CreateQuote.png)
+![Quotes](src/assets/quotes.png)
+
+
 ## Liscence
 Copyright <2020> (My Quotes)
 
