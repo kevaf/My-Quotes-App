@@ -30,6 +30,12 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+  upvoteQuote(index:any){
+    this.quote[index].upvote++;
+  }
+  downvoteQuote(index:any){
+    this.quote[index].downvote++;
+  }
   constructor() { }
 
   ngOnInit() {
