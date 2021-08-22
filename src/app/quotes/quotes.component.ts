@@ -20,14 +20,7 @@ export class QuotesComponent implements OnInit {
     quotes.userName=quotes.userName;
     this.quote.push(quotes);
   }
-  // toggleDetails(index:any){
-  //   this.quote[index].showDescription = !this.quote[index].showDescription;
-  // }
-  // completeGoal(isComplete:any, index:any){
-  //   if (isComplete) {
-  //     this.quote.splice(index,1);
-  //   }
-  // }
+
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].quoteDescription}?`)
@@ -37,14 +30,6 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
- 
- 
- 
- 
-  // quote: Quotes[]=[
-  //   {id:1, authorName:"Floki Vilgerðarson ", quotetxt:"One Must Always Think The Worst, Even Of Your Own Kin. That Way You Avoid Too Much Disappointment In Life.", userName:"Kevin"},
-  //   {id:2, authorName:"Ragnar Lothbrok", quotetxt:"We fight. That is how we win, and that is how we die.", userName:"Lois"}
-  // ]
   constructor() { }
 
   ngOnInit() {
