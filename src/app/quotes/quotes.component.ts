@@ -13,6 +13,13 @@ export class QuotesComponent implements OnInit {
     new Quotes(2,"Ragnar Lothbrok", "We fight. That is how we win, and that is how we die.", "Lois", new Date(2020,10,24)),
    
   ];
+
+  createNewQuote(quotes:any){
+    quotes.authorName=quotes.authorName;
+    quotes.quoteDescription=quotes.quoteDescription;
+    quotes.userName=quotes.userName;
+    this.quote.push(quotes);
+  }
   // toggleDetails(index:any){
   //   this.quote[index].showDescription = !this.quote[index].showDescription;
   // }

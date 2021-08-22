@@ -5,10 +5,10 @@
         <div class="col-md-6">
           <div *ngFor='let quotes of quote;let i = index'>
             <div>
-              <h6 id={{i}}>{{quotes.id}}. {{quotes.authorName}} </h6>
-              <h6 id={{i}}>{{quotes.quoteDescription}} </h6>
-              <h6 id={{i}}>{{quotes.userName}} </h6>
-              <h6 id={{i}}>{{quotes.time}} </h6>
+              <h6 > {{quotes.authorName}} </h6>
+              <h6 >{{quotes.quoteDescription}} </h6>
+              <h6 >{{quotes.userName}} </h6>
+              <h6 >{{quotes.time}} </h6>
               <!-- <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button> -->
             </div>
             <!-- <app-quote-details></app-quote-details> -->
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-md-6">
-        <app-quote-form (addQuote)></app-quote-form>
+        <app-quote-form (addQuote)="createNewQuote($event)"></app-quote-form>
         </div>
      </div>
   
