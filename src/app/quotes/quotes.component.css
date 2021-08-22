@@ -7,3 +7,7 @@
  #createQuote{
      padding-bottom: 2%;
  }
+ #quoterow{
+     display: flex;
+     flex-direction: row;
+ }

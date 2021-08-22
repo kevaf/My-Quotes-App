@@ -11,6 +11,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { TimePassedPipe } from './time-passed.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { HighlightFavoriteQuoteDirective } from './highlight-favorite-quote.directive';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     QuoteFormComponent,
     TimePassedPipe,
     FooterComponent,
+    HighlightFavoriteQuoteDirective,
     
   ],
   imports: [

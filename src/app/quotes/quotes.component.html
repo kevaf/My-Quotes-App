@@ -5,12 +5,17 @@
       <app-quote-form (addQuote)="createNewQuote($event)"></app-quote-form>
       </div>
   
-    <div class="row" id="currentQuote">
+    <div id="currentQuote">
+      
       <h2 style="text-align: center;">Current Quotes</h2>
           <hr>
         <div >
-          <div *ngFor='let quotes of quote;let i = index'>
+          <div *ngFor='let quotes of quote;let i = index'><br><br>
+            
+            <div class="col-md-4">
             <div>
+              <p *ngIf='quotes===highlightfavorite()'appHighlightFavoriteQuote style="text-align: center;">Best Voted Quote</p>
+            <div class="row" id="quoterow">
               <h5 >Author: <span style="color: red;">{{quotes.authorName}}</span> </h5>
               <h3 > {{quotes.quoteDescription}} </h3>
               <h5 >Posted By: <span style="color: blue;">{{quotes.userName}}</span> </h5>
@@ -20,6 +25,8 @@
             <button class="btn btn-outline-info"(click)="downvoteQuote(i)"><i class="fas fa-heart-broken"> Dislike</i> {{quotes.downvote}}</button> &nbsp;&nbsp;
             <button class="btn btn-outline-danger" (click)="deleteQuote($event, i)"><i class="fas fa-trash"> Delete</i></button>
           </div>
+        </div>
+          </div><br><br>
         </div>
      </div>
 
