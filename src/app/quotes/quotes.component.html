@@ -5,17 +5,12 @@
         <div class="col-md-6">
           <div *ngFor='let quotes of quote;let i = index'>
             <div>
-              <h6 > {{quotes.authorName}} </h6>
+              <h6 >{{quotes.authorName}} </h6>
               <h6 >{{quotes.quoteDescription}} </h6>
               <h6 >{{quotes.userName}} </h6>
               <h6 >{{quotes.time}} </h6>
-              <!-- <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button> -->
             </div>
-            <!-- <app-quote-details></app-quote-details> -->
-    
-            <!-- <div *ngIf='quote.showDescription'>
-              <app-goal-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-goal-detail>
-            </div> -->
+            <button class="btn-outline-danger" (click)="deleteQuote($event, i)"><i class="fas fa-trash"></i></button>
           </div>
         </div>
         <div class="col-md-6">

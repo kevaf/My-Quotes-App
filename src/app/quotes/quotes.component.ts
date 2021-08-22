@@ -28,15 +28,15 @@ export class QuotesComponent implements OnInit {
   //     this.quote.splice(index,1);
   //   }
   // }
-  // deleteGoal(isComplete:any, index:any){
-  //   if (isComplete) {
-  //     let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].quoteDescription}?`)
+  deleteQuote(isComplete:any, index:any){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].quoteDescription}?`)
 
-  //     if (toDelete){
-  //       this.quote.splice(index,1)
-  //     }
-  //   }
-  // }
+      if (toDelete){
+        this.quote.splice(index,1)
+      }
+    }
+  }
  
  
  
