@@ -10,6 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { TimePassedPipe } from './time-passed.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TimePassedPipe } from './time-passed.pipe';
     QuoteDetailsComponent,
     QuoteFormComponent,
     TimePassedPipe,
+    FooterComponent,
     
   ],
   imports: [
