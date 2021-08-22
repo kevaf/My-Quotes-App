@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     QuotesComponent,
     NavbarComponent,
     HomePageComponent,
+    QuoteDetailsComponent,
+    QuoteFormComponent,
     
   ],
   imports: [

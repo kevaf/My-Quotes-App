@@ -13,7 +13,23 @@ export class QuotesComponent implements OnInit {
     new Quotes(2,"Ragnar Lothbrok", "We fight. That is how we win, and that is how we die.", "Lois"),
    
   ];
- 
+  // toggleDetails(index:any){
+  //   this.quote[index].showDescription = !this.quote[index].showDescription;
+  // }
+  // completeGoal(isComplete:any, index:any){
+  //   if (isComplete) {
+  //     this.quote.splice(index,1);
+  //   }
+  // }
+  // deleteGoal(isComplete:any, index:any){
+  //   if (isComplete) {
+  //     let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].quoteDescription}?`)
+
+  //     if (toDelete){
+  //       this.quote.splice(index,1)
+  //     }
+  //   }
+  // }
  
  
  
