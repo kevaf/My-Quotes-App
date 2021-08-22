@@ -9,8 +9,8 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quote: Quotes[] = [
-    new Quotes(1, "Floki Vilgerðarson ", "One Must Always Think The Worst, Even Of Your Own Kin. That Way You Avoid Too Much Disappointment In Life.", "Kevin"),
-    new Quotes(2,"Ragnar Lothbrok", "We fight. That is how we win, and that is how we die.", "Lois"),
+    new Quotes(1, "Floki Vilgerðarson ", "One Must Always Think The Worst, Even Of Your Own Kin. That Way You Avoid Too Much Disappointment In Life.", "Kevin", new Date(2020,3,14)),
+    new Quotes(2,"Ragnar Lothbrok", "We fight. That is how we win, and that is how we die.", "Lois", new Date(2020,10,24)),
    
   ];
   // toggleDetails(index:any){
